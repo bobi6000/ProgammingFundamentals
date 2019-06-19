@@ -4,34 +4,25 @@
  *  Created on: 5 Jun 2019
  *      Author: pawel
  */
-#include <stdio.h>
+
+#include "main.h"
 int main (void){
 
-	int N=0,i=0,x=0;
+// prinrt numbers
+numbers(2);
 
-	int z=0,j=0,y=0,res=0;
+//power
+printf("\n 3 to the power of 4 : %d ",power (3,4));
+printf("\n 3 to the power of 0 : %d ",power (3,0));
+printf("\n 3 to the power of -1 : %d ",power (3,-1));
 
+//pattern of squares
+patternOfsquares (10);
+//inverted pattern of squares
+printf("\n\n");
+invertedPatternOfsquares (10);
+printf("\n\n");
+drawingRectangle (6, 2, 5, 1);
 
-
-	N=2;
-	x=N+2;
-
-	for (i=0;i<=N;i++){
-		printf("%d \t",(x*i));
-		x+=i*N;
-	}
-	printf("%d \t",x);
-
-//res=y^z
-
-
-
-	y=3;
-	z=4;
-	res=y;
-	for(j=1;j<z-1;z++){
-		res*=y;
-	}
-	printf("\n%d ",res);
-	return 0;
+return 0;
 }
