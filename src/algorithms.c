@@ -80,3 +80,51 @@ else{
 }
 
 }
+
+int whileLoopTest (int a, int b){
+	int total=0;
+	while (a<b){
+		total+=a;
+		printf("a=%d b=%d total=%d\n",a,b,total);
+		a++;
+		b--;
+	}
+	return total;
+}
+
+void whileLoopScopeOfVariables (int b){
+	int total=0;
+	{
+	int i=0;
+	while (i<b){
+		total+=b*i;
+		printf("i=%d total=%d\n",i,total);
+		i++;
+	}
+	}
+
+	{
+	int i=0;
+	while(i<5){
+		printf("i=%d 2nd loop \n",i);
+		i++;
+	}
+	}
+}
+
+
+void printRemainders(int lo, int hi, int n){
+
+	int i = lo,j=0;
+
+	while (i< hi){
+		printf("-->cycle of loop: %d \n",j++);
+		if (i==0){
+			printf ("Cannot divide by 0 \n");
+			i++;
+			continue;
+		}
+		printf("%d mod %d = %d \n",n,i,n%i);
+		i++;
+	}
+}

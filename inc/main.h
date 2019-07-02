@@ -14,5 +14,7 @@ int power (int x, int y);
 void patternOfsquares (int n);
 void invertedPatternOfsquares (int n);
 void drawingRectangle (int xs, int ys, int h, int w);
-
+int whileLoopTest (int a, int b);
+void whileLoopScopeOfVariables (int b);
+void printRemainders(int lo, int hi, int n);
 #endif /* INC_MAIN_H_ */

@@ -8,7 +8,7 @@
 #include "main.h"
 int main (void){
 
-// prinrt numbers
+// print numbers
 numbers(2);
 
 //power
@@ -23,6 +23,11 @@ printf("\n\n");
 invertedPatternOfsquares (10);
 printf("\n\n");
 drawingRectangle (6, 2, 5, 1);
-
+printf("\n\n");
+printf("whileLoopTest = %d",whileLoopTest(2,9));
+printf("\n\n");
+whileLoopScopeOfVariables(3);
+printf("\n\n");
+printRemainders(-2, 4, 5);
 return 0;
 }
