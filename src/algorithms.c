@@ -128,3 +128,87 @@ void printRemainders(int lo, int hi, int n){
 		i++;
 	}
 }
+
+
+void castingTest(void){
+	int nHrs = 40;
+	int nDays = 7;
+
+	float avgIntValue = nHrs/nDays;
+	float avgFloatValue = nHrs/(float)nDays;
+
+	printf("%d hours in %d days\n", nHrs, nDays);
+	printf("work %.1f (int avg) %.1f (float avg) hours per day \n",avgIntValue,avgFloatValue );
+}
+
+
+struct rect_t {
+	int left;
+	int bottom;
+	int right;
+	int top;
+};
+
+typedef struct rect2nd_tag {
+	int left;
+	int bottom;
+	int right;
+	int top;
+}rect2nd_t;
+
+typedef struct {
+	int left;
+	int bottom;
+	int right;
+	int top;
+}rect3rd_t;
+
+typedef struct rect_t rect_tag;
+
+void structsTest (void){
+
+	struct rect_t myRect1;
+	rect_tag myRect2;
+	rect2nd_t myRect3;
+	rect3rd_t myRect4;
+
+	myRect1.left=-4;
+	myRect1.bottom=1;
+	myRect1.right=8;
+	myRect1.top=6;
+
+	myRect2.left=-4;
+	myRect2.bottom=1;
+	myRect2.right=8;
+	myRect2.top=6;
+
+	myRect3.left=-4;
+	myRect3.bottom=1;
+	myRect3.right=8;
+	myRect3.top=6;
+
+	myRect4.left=-4;
+	myRect4.bottom=1;
+	myRect4.right=8;
+	myRect4.top=6;
+	printf("Different structures:\t Left top corner \n");
+	printf("option 1  - (%d,%d)\t",myRect1.left,myRect1.top );
+	printf("option 2  - (%d,%d)\t",myRect2.left,myRect2.top );
+	printf("option 3  - (%d,%d)\t",myRect3.left,myRect3.top );
+	printf("option 4  - (%d,%d)\t",myRect4.left,myRect4.top );
+}
+
+
+enum months_t {JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNY, JULY, AUGUST, SEMPTEMBER, OCTOBER, NONEMBER, DECEMBER};
+
+
+void printMonth(enum months_t m){
+
+	printf ("Now is %d. month of year\n",m+1);
+}
+
+
+void enumtest(void){
+
+	printMonth(JANUARY);
+}

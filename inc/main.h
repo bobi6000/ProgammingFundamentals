@@ -17,4 +17,7 @@ void drawingRectangle (int xs, int ys, int h, int w);
 int whileLoopTest (int a, int b);
 void whileLoopScopeOfVariables (int b);
 void printRemainders(int lo, int hi, int n);
+void castingTest(void);
+void structsTest (void);
+void enumtest(void);
 #endif /* INC_MAIN_H_ */

@@ -29,5 +29,11 @@ printf("\n\n");
 whileLoopScopeOfVariables(3);
 printf("\n\n");
 printRemainders(-2, 4, 5);
+printf("\n\n");
+castingTest();
+printf("\n\n");
+structsTest ();
+printf("\n\n");
+enumtest();
 return 0;
 }
