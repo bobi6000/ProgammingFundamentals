@@ -212,3 +212,37 @@ void enumtest(void){
 
 	printMonth(JANUARY);
 }
+
+int max (int a, int b){
+ int res;
+	if (a>=b)res=a;
+	else if (a<b)res=b;
+
+ return res;
+}
+
+int min (int a, int b){
+ int res;
+	if (a<=b)res= a;
+	else if (a>b)res= b;
+
+ return res;
+}
+
+
+rect3rd_t firstRectangle, secondRectangle;
+/
+rect3rd_t intersectionOfRectangles(rect3rd_t *r1,rect3rd_t r2){
+
+	rect3rd_t r1Ar2;
+
+
+	r1Ar2.left=max(9,8);
+//	r1Ar2.bottom =  max(r1->bottom,r2->bottom);
+//	r1Ar2.right = min(*r1->right,*r2->right);
+//	r1Ar2.top = min(*r1->top,*r2->top);
+
+	return r1Ar2;
+
+}
+

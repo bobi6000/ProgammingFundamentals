@@ -16,6 +16,8 @@ printf("\n 3 to the power of 4 : %d ",power (3,4));
 printf("\n 3 to the power of 0 : %d ",power (3,0));
 printf("\n 3 to the power of -1 : %d ",power (3,-1));
 
+//COURSE 1 - BEGIN
+/*
 //pattern of squares
 patternOfsquares (10);
 //inverted pattern of squares
@@ -35,5 +37,9 @@ printf("\n\n");
 structsTest ();
 printf("\n\n");
 enumtest();
+*/
+//COURSE 1 - END
+
+//COURSE 2 - BEGIN
 return 0;
 }
